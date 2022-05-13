@@ -42,10 +42,10 @@ const BLOG = {
   PREVIEW_TAG_COUNT: 16, // 首页最多展示的标签数量，0为不限制
 
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
-  CONTACT_EMAIL: 'mail@tangly1024.com',
+  CONTACT_EMAIL: 'lihaorr@gmail.com',
   CONTACT_WEIBO: '',
   CONTACT_TWITTER: '',
-  CONTACT_GITHUB: 'https://github.com/tangly1024',
+  CONTACT_GITHUB: '',
   CONTACT_TELEGRAM: '',
 
   // 鼠标点击烟花特效
@@ -61,9 +61,9 @@ const BLOG = {
 
   // giscus @see https://giscus.app/
   COMMENT_GISCUS_REPO: process.env.NEXT_PUBLIC_COMMENT_GISCUS_REPO || 'lihaorr/NotionNext', // 你的Github仓库名 e.g 'tangly1024/NotionNext'
-  COMMENT_GISCUS_REPO_ID: process.env.NEXT_PUBLIC_COMMENT_GISCUS_REPO_ID || '', // 你的Github Repo ID e.g ( 設定完 giscus 即可看到 )
+  COMMENT_GISCUS_REPO_ID: process.env.NEXT_PUBLIC_COMMENT_GISCUS_REPO_ID || 'R_kgDOHVMeFA', // 你的Github Repo ID e.g ( 設定完 giscus 即可看到 )
   COMMENT_GISCUS_CATEGORY_ID:
-    process.env.NEXT_PUBLIC_COMMENT_GISCUS_CATEGORY_ID || '', // 你的Github Discussions 內的 Category ID ( 設定完 giscus 即可看到 )
+    process.env.NEXT_PUBLIC_COMMENT_GISCUS_CATEGORY_ID || 'DIC_kwDOHVMeFM4CPF1u', // 你的Github Discussions 內的 Category ID ( 設定完 giscus 即可看到 )
   COMMENT_GISCUS_MAPPING:
     process.env.NEXT_PUBLIC_COMMENT_GISCUS_MAPPING || 'pathname', // 你的Github Discussions 使用哪種方式來標定文章, 預設 'pathname'
   COMMENT_GISCUS_REACTIONS_ENABLED:
@@ -78,7 +78,7 @@ const BLOG = {
   COMMENT_GISCUS_CROSSORIGIN:
     process.env.NEXT_PUBLIC_COMMENT_GISCUS_CROSSORIGIN || 'anonymous', // 你的 Giscus 可以跨網域, 預設 'anonymous'
 
-  COMMENT_CUSDIS_APP_ID: process.env.NEXT_PUBLIC_COMMENT_CUSDIS_APP_ID || '', // data-app-id 36位 see https://cusdis.com/
+  COMMENT_CUSDIS_APP_ID: process.env.NEXT_PUBLIC_COMMENT_CUSDIS_APP_ID || '1c94823e-2701-404f-b895-4d9e9429b737', // data-app-id 36位 see https://cusdis.com/
   COMMENT_CUSDIS_HOST:
     process.env.NEXT_PUBLIC_COMMENT_CUSDIS_HOST || 'https://cusdis.com', // data-host, change this if you're using self-hosted version
   COMMENT_CUSDIS_SCRIPT_SRC:
@@ -89,18 +89,18 @@ const BLOG = {
     process.env.NEXT_PUBLIC_COMMENT_UTTERRANCES_REPO || 'lihaorr/NotionNext', // 你的代码仓库名， 例如我是 'tangly1024/NotionNext'； 更多文档参考 https://utteranc.es/
 
   // gitalk评论插件 更多参考 https://gitalk.github.io/
-  COMMENT_GITALK_REPO: process.env.NEXT_PUBLIC_COMMENT_GITALK_REPO || '', // 你的Github仓库名，例如 'NotionNext'
-  COMMENT_GITALK_OWNER: process.env.NEXT_PUBLIC_COMMENT_GITALK_OWNER || '', // 你的用户名 e.g tangly1024
-  COMMENT_GITALK_ADMIN: process.env.NEXT_PUBLIC_COMMENT_GITALK_ADMIN || '', // 管理员用户名、一般是自己 e.g 'tangly1024'
+  COMMENT_GITALK_REPO: process.env.NEXT_PUBLIC_COMMENT_GITALK_REPO || 'NotionNext', // 你的Github仓库名，例如 'NotionNext'
+  COMMENT_GITALK_OWNER: process.env.NEXT_PUBLIC_COMMENT_GITALK_OWNER || 'lihaorr', // 你的用户名 e.g tangly1024
+  COMMENT_GITALK_ADMIN: process.env.NEXT_PUBLIC_COMMENT_GITALK_ADMIN || 'lihaorr', // 管理员用户名、一般是自己 e.g 'tangly1024'
   COMMENT_GITALK_CLIENT_ID:
-    process.env.NEXT_PUBLIC_COMMENT_GITALK_CLIENT_ID || '', // e.g 20位ID ， 在gitalk后台获取
+    process.env.NEXT_PUBLIC_COMMENT_GITALK_CLIENT_ID || '7e1a5ec10e5f80c84581', // e.g 20位ID ， 在gitalk后台获取
   COMMENT_GITALK_CLIENT_SECRET:
-    process.env.NEXT_PUBLIC_COMMENT_GITALK_CLIENT_SECRET || '', // e.g 40位ID， 在gitalk后台获取
+    process.env.NEXT_PUBLIC_COMMENT_GITALK_CLIENT_SECRET || '9c061306522901039a1413ba9dda73ee889774ed', // e.g 40位ID， 在gitalk后台获取
   COMMENT_GITALK_DISTRACTION_FREE_MODE: false, // 类似facebook的无干扰模式
 
   COMMENT_GITTER_ROOM: process.env.NEXT_PUBLIC_COMMENT_GITTER_ROOM || 'lihaorr', // gitter聊天室 see https://gitter.im/ 不需要则留空
-  COMMENT_DAO_VOICE_ID: process.env.NEXT_PUBLIC_COMMENT_DAO_VOICE_ID || 'hl0dtkhzo0hc7lz0dvp572i9d76j6ucchlkd37dh', // DaoVoice http://dashboard.daovoice.io/get-started
-  COMMENT_TIDIO_ID: process.env.NEXT_PUBLIC_COMMENT_TIDIO_ID || '', // [tidio_id] -> //code.tidio.co/[tidio_id].js
+  COMMENT_DAO_VOICE_ID: process.env.NEXT_PUBLIC_COMMENT_DAO_VOICE_ID || '2dc83cd8', // DaoVoice http://dashboard.daovoice.io/get-started
+  COMMENT_TIDIO_ID: process.env.NEXT_PUBLIC_COMMENT_TIDIO_ID || 'nkqa8w2co0ww3kzmbstfbasqix1pu3sh', // [tidio_id] -> //code.tidio.co/[tidio_id].js
 
   //  站点统计
   ANALYTICS_BUSUANZI_ENABLE: true, // 展示网站阅读量、访问数 see http://busuanzi.ibruce.info/
