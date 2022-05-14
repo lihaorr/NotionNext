@@ -13,6 +13,8 @@ import { useGlobal } from '@/lib/global'
 import BLOG from '@/blog.config'
 import FacebookPage from '@/components/FacebookPage'
 
+import Link from 'next/link'
+import Card from './components/Card'
 /**
  * 基础布局 采用左右两侧布局，移动端使用顶部导航栏
  * @param props
@@ -20,7 +22,7 @@ import FacebookPage from '@/components/FacebookPage'
  * @constructor
  */
 const LayoutBase = props => {
-  const { children, headerSlot, floatSlot, meta, siteInfo } = props
+  const { children, headerSlot, floatSlot, meta, siteInfo, categories } = props
   const [show, switchShow] = useState(false)
   // const [percent, changePercent] = useState(0) // 页面阅读百分比
   const rightAreaSlot = (
@@ -29,7 +31,7 @@ const LayoutBase = props => {
       <Live2D />
     </>
   )
-  const { onLoading } = useGlobal()
+  const { onLoading, locale } = useGlobal()
   
   
  const scrollListener = () => {
@@ -67,6 +69,28 @@ const LayoutBase = props => {
         >
           <div className="w-full max-w-4xl">
             {onLoading ? <LoadingCover /> : children}
+<Card className="w-full min-h-screen">
+        <div className="dark:text-gray-200 mb-5 mx-3">
+          <i className="mr-4 fas fa-th" />
+          {locale.COMMON.CATEGORY}:
+        </div>
+        <div id="category-list" className="duration-200 flex flex-wrap mx-8">
+          {categories.map(category => {
+            return (
+              <Link key={category.name} href={`/category/${category.name}`} passHref>
+                <div
+                  className={
+                    ' duration-300 dark:hover:text-white px-5 cursor-pointer py-2 hover:text-indigo-400'
+                  }
+                >
+                  <i className="mr-4 fas fa-folder" />
+                  {category.name}({category.count})
+                </div>
+              </Link>
+            )
+          })}
+        </div>
+      </Card>
           </div>
           <SideRight {...props} slot={rightAreaSlot} />
         </div>
