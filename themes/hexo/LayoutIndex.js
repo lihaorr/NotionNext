@@ -8,6 +8,8 @@ import Link from 'next/link'
 import Card from './components/Card'
 
 export const LayoutIndex = (props) => {
+    const { categories } = props
+  const { locale } = useGlobal()
   return <LayoutBase {...props} headerSlot={CONFIG_HEXO.HOME_BANNER_ENABLE && <Header {...props} />}>
  <div className='bg-white dark:bg-gray-700 p-10'>
       <div className='dark:text-gray-200 mb-5'>
