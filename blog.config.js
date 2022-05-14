@@ -100,7 +100,7 @@ const BLOG = {
 
   COMMENT_GITTER_ROOM: process.env.NEXT_PUBLIC_COMMENT_GITTER_ROOM || '', // gitter聊天室 see https://gitter.im/ 不需要则留空
   COMMENT_DAO_VOICE_ID: process.env.NEXT_PUBLIC_COMMENT_DAO_VOICE_ID || '', // DaoVoice http://dashboard.daovoice.io/get-started
-  COMMENT_TIDIO_ID: process.env.NEXT_PUBLIC_COMMENT_TIDIO_ID || 'gmvlosoxjujboaeo0dhxbsw1c7d7bfeq', // [tidio_id] -> //code.tidio.co/[tidio_id].js
+  COMMENT_TIDIO_ID: process.env.NEXT_PUBLIC_COMMENT_TIDIO_ID || 'nkqa8w2co0ww3kzmbstfbasqix1pu3sh', // [tidio_id] -> //code.tidio.co/[tidio_id].js
 
   //  站点统计
   ANALYTICS_BUSUANZI_ENABLE: true, // 展示网站阅读量、访问数 see http://busuanzi.ibruce.info/
