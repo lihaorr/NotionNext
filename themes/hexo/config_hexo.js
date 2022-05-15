@@ -1,6 +1,6 @@
 const CONFIG_HEXO = {
   HOME_BANNER_ENABLE: true,
-  HOME_BANNER_GREETINGS: ['Hi，看小说', '点导航', '看分类', '里面有目前的所有🎉'], // 首页大图标语文字
+  HOME_BANNER_GREETINGS: ['Hi，我是一个普通人', 'Hi，本来想建个博客', 'Hi，直到看到小说侠', '希望这里有你想要的🎉'], // 首页大图标语文字
 
   // 菜单配置
   MENU_CATEGORY: true, // 显示分类
